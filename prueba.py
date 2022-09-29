@@ -1,6 +1,3 @@
-# from curses.ascii import isdigit
-
-
 def arithmetic_arranger(problems):
 
     primero = ""
@@ -32,7 +29,13 @@ def arithmetic_arranger(problems):
             return arranged_problems
            # error de caracter que no se numerico
             
-         
+         if len(num1) >=5 :
+            arranged_problems = "Error: Numbers cannot be more than four digits."
+            return arranged_problems
+
+         elif len(num3) >=5 :
+            arranged_problems = "Error: Numbers cannot be more than four digits."
+            return arranged_problems
          
 
 
@@ -47,7 +50,7 @@ def arithmetic_arranger(problems):
 
 # arithmetic_arranger(["32 + 8", "1 - 3801", "9999 / 9999", "523 - 49", "523 - 49", "523 - 49"])
 
-arithmetic_arranger(["7 + 7", "7 - 3801", "9999 + 9999", "523 + 49"])
+arithmetic_arranger(["744 + 7", "7 - 3804", "9999 + 9999", "523 + 49"])
  
 
 
