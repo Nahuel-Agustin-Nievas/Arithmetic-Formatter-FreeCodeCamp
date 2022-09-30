@@ -64,8 +64,8 @@ def arithmetic_arranger(problems, sol = False):
        arranged_problems = primero + "\n" + segundo + "\n" + lineas
 
 
-    print (arranged_problems)
+       return arranged_problems
 
 
-
-arithmetic_arranger(["32 + 698", "1 - 3801", "9999 + 9999", "43 - 49", "523 - 49"])
+#test
+#arithmetic_arranger(["32 + 698", "1 - 3801", "9999 + 9999", "43 - 49", "523 - 49"])
